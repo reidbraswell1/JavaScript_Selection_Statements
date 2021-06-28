@@ -1,18 +1,18 @@
 console.log("Hello World!\n==========\n");
 console.log("Follow the steps in the README.md file to complete the exercises:\n==========\n");
 
+// ****************************************************************************
 // Exercise 1
+// ****************************************************************************
 // Number constants
 const initialNumber = 7;
 const minNumber = 1;
 const maxNumber = 10;
 
-// Question
+// Question & Message Constants
 const question1 = "Enter a number between";
-const question2 = "Would you  like to guess again (y/n)?";
-
-// Congratulations message
-const congratsMsg = "Congratulations !!!";
+const question2 = "Would you  like to try again (y/n)?";
+const congratsMsg = `Congratulations !!! You guessed ${initialNumber}`;
 
 let userWantsToContinue = true;
 while (userWantsToContinue) {
@@ -35,8 +35,10 @@ while (userWantsToContinue) {
     }
 }
 
+// ****************************************************************************
 // Exercise 2
-// Topics
+// ****************************************************************************
+// Topic Constants
 const topic1 = "coding";
 const topic2 = "electronics";
 const topic3 = "cars";
@@ -48,7 +50,7 @@ const topic8 = "math";
 const topic9 = "science";
 
 // Prompt question
-const question = "Would you care to try more topics? (y/n)";
+const question = "Would you like to try more topics? (y/n)";
 
 // Closing msg
 const closingMsg = "Thanks for stopping by today!! Have a great day!!"
@@ -96,7 +98,7 @@ while (userWantsToContinue) {
                 userWantsToContinue = false;
             }
             break;
-        case topic6:
+        case topic6.toLowerCase():
             userChoice = window.prompt(`You choose ${topic6}! ${question}`);
             console.log(`You choose ${topic6}!`);
             if(userChoice.toLowerCase() == "n") {
