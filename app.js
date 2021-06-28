@@ -11,7 +11,7 @@ const maxNumber = 10;
 const question1 = "Enter a number between";
 const question2 = "Would you  like to guess again (y/n)?";
 
-// 
+// Congratulations message
 const congratsMsg = "Congratulations !!!";
 
 let userWantsToContinue = true;
